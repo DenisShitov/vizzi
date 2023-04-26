@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/himiklab/yii2-recaptcha-widget" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/behat/gherkin" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/predis/predis" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/ethercreative/yii2-ip-ratelimiter" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/mashape/unirest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/cebe/markdown" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/bower/jquery.inputmask" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/bower/punycode" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/bower/jquery" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2-composer" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/bower/typeahead.js" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/bower/inputmask" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/bower/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpspec/php-diff" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/bower/yii2-pjax" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2-bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2-gii" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2-faker" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2-swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/yiisoft/yii2-httpclient" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/browser-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpfastcache/phpssdb" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/dom-crawler" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpfastcache/phpfastcache" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/codeception/phpunit-wrapper" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/codeception/verify" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/codeception/base" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/codeception/specify" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/codeception/stub" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/ezyang/htmlpurifier" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/api.vizzi.ru/vendor/guzzlehttp/psr7" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

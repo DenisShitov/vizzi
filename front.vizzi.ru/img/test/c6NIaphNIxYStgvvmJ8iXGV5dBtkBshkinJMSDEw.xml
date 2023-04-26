@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="25-01-23 9:48">
+ <shop>
+        <name>BONUM</name>
+        <company>ООО «БОНУМ»</company>
+        <url>https://www.bonum-trailer.ru</url>
+		
+        <categories>
+		
+            <category id="1">Шторные ПП</category>
+            <category id="2">Шторно-бортовые ПП</category>
+			<category id="3">Бортовые ПП</category>
+			<category id="4">ПП Контейнеровоз</category>
+			<category id="5">Самосвальный зерновоз</category>
+			<category id="6">Зерновоз</category>
+			<category id="7">Зерновоз бортовой</category>
+			<category id="8">Бункер-перегрузчик</category>
+			<category id="9">Рулоновоз шторный</category>
+        </categories>
+	
+		
+<offers>	
+	
+<offer id="1" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/tentovannyye-polupritsepy/shtornyj-polupricep-91-m3</url>
+  <price>3740000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc05779mini.794c5776a4ab6fd2b658e552a3c43581786.jpg</picture>
+  <name>Шторный полуприцеп BONUM</name>
+  <vendor>BONUM</vendor>
+  <description>Прочная рама. Объем 91 м3. Улучшенные сдвижные механизмы. Произведен в России!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="2" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/tentovannyye-polupritsepy/shtornyij-polupriczep-91-m3-(914295-04)-s-vyinesennoj-osyu</url>
+  <price>4140000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>1</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/imgonline-com-ua-resize-1a2emdhxwueczkn9.794c5776a4ab6fd2b658e552a3c43581959.jpg</picture>
+  <name>Шторный полуприцеп BONUM с вынесенной осью</name>
+  <vendor>BONUM</vendor>
+  <description>Улучшенные сдвижные механизмы. Произведен в России! Количество осей 3+1. Снаряженная масса от 7 450 кг.</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="3" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/tentovannyye-polupritsepy/shtorno-bortovoj-polupricep-91-m3</url>
+  <price>3890000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>2</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc03788mini.794c5776a4ab6fd2b658e552a3c43581814.jpg</picture>
+  <name>Шторно-бортовой полуприцеп BONUM</name>
+  <vendor>BONUM</vendor>
+  <description>Прочная рама. Улучшенные сдвижные механизмы. Объем 91м3. 3 оси. Снаряженная масса от 6 780 кг. Произведен в России!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="4" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/polupriczepyi-bortovyie/bortovoj-polupricep-(914296-06)</url>
+  <price>3250000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>3</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/otkryityij-bortovoj-3-osi.794c5776a4ab6fd2b658e552a3c43581924.jpg</picture>
+  <name>Бортовой полуприцеп BONUM</name>
+  <vendor>BONUM</vendor>
+  <description>До 30 тонн без перегруза! Стальной усиленный кузов. Надежные комплектующие.</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="5" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/polupriczepyi-bortovyie/bortovoj-polupriczep-(914295-06)-s-vyinesennoj-osyu</url>
+  <price>3650000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>3</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc05988mini.794c5776a4ab6fd2b658e552a3c435811085.jpg</picture>
+  <name>Бортовой полуприцеп BONUM с вынесенной осью</name>
+  <vendor>BONUM</vendor>
+  <description>До 30 тонн без перегруза! Стальной усиленный кузов. Надежные комплектующие. Количество осей 3+1.</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="6" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/kontejnerovozyi/kontejnerovoz-(914295-05)</url>
+  <price>3390000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>4</categoryId>
+  <picture> https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc07731-min.0aa5348ddaab29964dd077e5ff2780b7921.jpg</picture>
+  <name>Полуприцеп-контейнеровоз BONUM</name>
+  <vendor>BONUM</vendor>
+  <description>Лёгкий и прочный полуприцеп, перевозите до 31 т. без перегруза. Гарантия до 3 лет!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="7" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/samosvalnyie-zernovozyi-s-alyuminievyim-kuzovom/zernovoz-samosvalnyij-stalnoj-46-58-m3-(914295-01)</url>
+  <price>4540000</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>5</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc04260-2.794c5776a4ab6fd2b658e552a3c43581903.jpg</picture>
+  <name>Зерновоз самосвальный BONUM 46 м3 </name>
+  <vendor>BONUM</vendor>
+  <description>Стальной кузов. Боковая выгрузка. Снаряженная масса от 7 900 кг. Звоните!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="8" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/zernovozyi/zernovoz-bortovoj-46-m3-(oblegchyonnaya-model)</url>
+  <price>4288950</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>6</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc09978-min.794c5776a4ab6fd2b658e552a3c43581868.jpg</picture>
+  <name>Облегченный зерновоз BONUM 46 м3 с вынесенной осью</name>
+  <vendor>BONUM</vendor>
+  <description>Высокая эффективность. Надёжность, проверенная временем. Произведён в России Звоните!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="9" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/zernovozyi/oblegchennyie-zernovozyi-bortovyie-58-m3</url>
+  <price>4531500</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>6</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc07508-min.0aa5348ddaab29964dd077e5ff2780b71094.jpg</picture>
+  <name>Облегченный зерновоз BONUM 58 м3 с вынесенной осью</name>
+  <vendor>BONUM</vendor>
+  <description>Высокая эффективность. Надёжность, проверенная временем. Произведён в России Звоните!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="10" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/selskoxozyajstvennaya-texnika/bunker-peregruzchik-bonum-bp-1000</url>
+  <price>4828000</price>
+  <oldprice>5680000</oldprice>
+  <currencyId>RUB</currencyId>
+  <categoryId>8</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc05387-min.794c5776a4ab6fd2b658e552a3c43581627.jpg</picture>
+  <name>Бункер-перегрузчик BONUM 30 м3</name>
+  <vendor>BONUM</vendor>
+  <description>Грузоподъемность до 24 000 кг. Объем 30 м3. Произведен в России. В наличии!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="11" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/selskoxozyajstvennaya-texnika/bunker-peregruzchik-40-m3</url>
+  <price>6570000</price>
+  <oldprice>7730000</oldprice>
+  <currencyId>RUB</currencyId>
+  <categoryId>8</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc07143mini.794c5776a4ab6fd2b658e552a3c435811076.jpg</picture>
+  <name>Бункер-перегрузчик BONUM 40 м3</name>
+  <vendor>BONUM</vendor>
+  <description>Грузоподъемность до 30 000 кг. Объем 40 м3. Произведен в России. В наличии!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="12" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/selskoxozyajstvennaya-texnika/samosvalnyij-traktornyij-polupriczep-20-m3-(stpp2000)</url>
+  <price>2992000</price>
+  <oldprice>3520000</oldprice>
+  <currencyId>RUB</currencyId>
+  <categoryId>5</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/img-7206mini.794c5776a4ab6fd2b658e552a3c43581816.jpg</picture>
+  <name>Самосвальный тракторный полуприцеп BONUM</name>
+  <vendor>BONUM</vendor>
+  <description>Грузоподъемность до 20 000 кг. Объем 20 м3. Произведен в России. Звоните!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="13" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/tentovannyye-polupritsepy/shtornyij-polupriczep-91-m3-(914296-04)dlya-perevozki-rulonov-stali</url>
+  <price>4250000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc06801mini.0aa5348ddaab29964dd077e5ff2780b71091.jpg </picture>
+  <name>Шторный рулоновоз BONUM</name>
+  <vendor>BONUM</vendor>
+  <description>Специальные углубления для фиксации катушек и рулонов стали. Прочная рама. Объем 91 м3. Произведен в России!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="14" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/tentovannyye-polupritsepy/shtornyij-polupriczep-91-m3-(914296-04)dlya-perevozki-rulonov-stali</url>
+  <price>4400000.00</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>9</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc06801mini.0aa5348ddaab29964dd077e5ff2780b71091.jpg </picture>
+  <name>Шторно-бортовой рулоновоз BONUM</name>
+  <vendor>BONUM</vendor>
+  <description>Специальные углубления для фиксации катушек и рулонов стали. Прочная рама. Объем 91 м3. Произведен в России!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+<offer id="15" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/zernovozyi/bortovye-zernovozy-46-60-m3-4osi</url>
+  <price>4531500</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>7</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/img-20201120-160118-min.794c5776a4ab6fd2b658e552a3c43581123.jpg</picture>
+  <name>Зерновоз бортовой BONUM 58 м3</name>
+  <vendor>BONUM</vendor>
+  <description>4 оси. Усиленная прочность рамы. Российское производство. Выгодный лизинг.  Звоните!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+
+<offer id="16" available="true">
+  <url>https://www.bonum-trailer.ru/kategorii/zernovozyi/bortovye-zernovozy-46-60-m3-3osi</url>
+  <price>3900450</price>
+  <currencyId>RUB</currencyId>
+  <categoryId>7</categoryId>
+  <picture>https://www.bonum-trailer.ru/assets/components/phpthumbof/cache/dsc02938-min.794c5776a4ab6fd2b658e552a3c43581201.jpg</picture>
+  <name>Зерновоз бортовой BONUM 46 м3</name>
+  <vendor>BONUM</vendor>
+  <description>3 оси. Усиленная прочность рамы. Российское производство. Выгодный лизинг. Звоните!</description>
+  <country_of_origin>Россия</country_of_origin>
+</offer>
+
+
+</offers>
+</shop>
+</yml_catalog>

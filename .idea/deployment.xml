@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="vizzi-new" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="sptech86">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sz">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="umk-web">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="umk.task">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="vizzi-new">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/api.vizzi.ru/modules" local="$PROJECT_DIR$/api.vizzi.ru/modules" web="/" />
+            <mapping deploy="/api.vizzi.ru/models" local="$PROJECT_DIR$/api.vizzi.ru/models" web="/" />
+            <mapping deploy="/front.vizzi.ru" local="$PROJECT_DIR$/front.vizzi.ru" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/api.vizzi.ru/config" />
+            <excludedPath path="/api.vizzi.ru/.htaccess" />
+            <excludedPath path="/api.vizzi.ru/runtime" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="zsp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

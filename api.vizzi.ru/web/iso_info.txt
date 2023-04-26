@@ -1,0 +1,182 @@
+Административный район
+RU-AMU	Амурская область
+RU-ARK	Архангельская область
+RU-AST	Астраханская область
+RU-BEL	Белгородская область
+RU-BRY	Брянская область
+RU-CHE	Челябинская область
+RU-IRK	Иркутская область
+RU-IVA	Ивановская область
+RU-KEM	Кемеровская область
+RU-KGD	Калининградская область
+RU-KGN	Курганская область
+RU-KIR	Кировская область
+RU-KLU	Калужская область
+RU-KOS	Костромская область
+RU-KRS	Курская область
+RU-LEN	Ленинградская область
+RU-LIP	Липецкая область
+RU-MAG	Магаданская область
+RU-MOS	Московская область
+RU-MUR	Мурманская область
+RU-NGR	Новгородская область
+RU-NIZ	Нижегородская область
+RU-NVS	Новосибирская область
+RU-OMS	Омская область
+RU-ORE	Оренбургская область
+RU-ORL	Орловская область
+RU-PNZ	Пензенская область
+RU-PSK	Псковская область
+RU-ROS	Ростовская область
+RU-RYA	Рязанская область
+RU-SAK	Сахалинская область
+RU-SAM	Самарская область
+RU-SAR	Саратовская область
+RU-SMO	Смоленская область
+RU-SVE	Свердловская область
+RU-TAM	Тамбовская область
+RU-TOM	Томская область
+RU-TUL	Тульская область
+RU-TVE	Тверская область
+RU-TYU	Тюменская область
+RU-ULY	Ульяновская область
+RU-VGG	Волгоградская область
+RU-VLA	Владимирская область
+RU-VLG	Вологодская область
+RU-VOR	Воронежская область
+RU-YAR	Ярославская область
+
+Административная территория
+RU-ALT	Алтайский край
+RU-KAM	Камчатский край
+RU-KDA	Краснодарский край
+RU-KHA	Хабаровский край
+RU-KYA	Красноярский край
+RU-PER	Пермский край
+RU-PRI	Приморский край
+RU-STA	Ставропольский край
+RU-ZAB	Забайкальский край
+
+Автономный город
+RU-MOW	Москва
+RU-SPE	Санкт-Петербург
+
+Автономный округ
+RU-CHU	Чукотский автономный округ
+RU-KHM	Ханты-Мансийский автономный округ
+RU-NEN	Ненецкий автономный округ
+RU-YAN	Ямало-Ненецкий автономный округ
+
+Автономная область
+RU-YEV	Еврейская автономная область
+
+Республика
+RU-AD	Адыгея
+RU-AL	Республика Алтай
+RU-BA	Башкортостан
+RU-BU	Бурятия
+RU-CE	Чечня
+RU-CU	Чувашия
+RU-DA	Дагестан
+RU-IN	Ингушетия
+RU-KB	Кабардино-Балкария
+RU-KC	Карачаево-Черкесия
+RU-KK	Хакасия
+RU-KL	Калмыкия
+RU-KO	Республика Коми
+RU-KR	Республика Карелия
+RU-ME	Марий Эл
+RU-MO	Мордовия
+RU-SA	Якутия
+RU-SE	Северная Осетия
+RU-TA	Татарстан
+RU-TY	Тыва
+RU-UD	Удмуртия
+RU-CR	Крым
+
+
+<select name="region_iso" id="region_iso">
+<option value="RU-AMU">Амурская область</option>
+<option value="RU-ARK">Архангельская область</option>
+<option value="RU-AST">Астраханская область</option>
+<option value="RU-BEL">Белгородская область</option>
+<option value="RU-BRY">Брянская область</option>
+<option value="RU-CHE">Челябинская область</option>
+<option value="RU-IRK">Иркутская область</option>
+<option value="RU-IVA">Ивановская область</option>
+<option value="RU-KEM">Кемеровская область</option>
+<option value="RU-KGD">Калининградская область</option>
+<option value="RU-KGN">Курганская область</option>
+<option value="RU-KIR">Кировская область</option>
+<option value="RU-KLU">Калужская область</option>
+<option value="RU-KOS">Костромская область</option>
+<option value="RU-KRS">Курская область</option>
+<option value="RU-LEN">Ленинградская область</option>
+<option value="RU-LIP">Липецкая область</option>
+<option value="RU-MAG">Магаданская область</option>
+<option value="RU-MOS">Московская область</option>
+<option value="RU-MUR">Мурманская область</option>
+<option value="RU-NGR">Новгородская область</option>
+<option value="RU-NIZ">Нижегородская область</option>
+<option value="RU-NVS">Новосибирская область</option>
+<option value="RU-OMS">Омская область</option>
+<option value="RU-ORE">Оренбургская область</option>
+<option value="RU-ORL">Орловская область</option>
+<option value="RU-PNZ">Пензенская область</option>
+<option value="RU-PSK">Псковская область</option>
+<option value="RU-ROS">Ростовская область</option>
+<option value="RU-RYA">Рязанская область</option>
+<option value="RU-SAK">Сахалинская область</option>
+<option value="RU-SAM">Самарская область</option>
+<option value="RU-SAR">Саратовская область</option>
+<option value="RU-SMO">Смоленская область</option>
+<option value="RU-SVE">Свердловская область</option>
+<option value="RU-TAM">Тамбовская область</option>
+<option value="RU-TOM">Томская область</option>
+<option value="RU-TUL">Тульская область</option>
+<option value="RU-TVE">Тверская область</option>
+<option value="RU-TYU">Тюменская область</option>
+<option value="RU-ULY">Ульяновская область</option>
+<option value="RU-VGG">Волгоградская область</option>
+<option value="RU-VLA">Владимирская область</option>
+<option value="RU-VLG">Вологодская область</option>
+<option value="RU-VOR">Воронежская область</option>
+<option value="RU-YAR">Ярославская область</option>
+<option value="RU-ALT">Алтайский край</option>
+<option value="RU-KAM">Камчатский край</option>
+<option value="RU-KDA">Краснодарский край</option>
+<option value="RU-KHA">Хабаровский край</option>
+<option value="RU-KYA">Красноярский край</option>
+<option value="RU-PER">Пермский край</option>
+<option value="RU-PRI">Приморский край</option>
+<option value="RU-STA">Ставропольский край</option>
+<option value="RU-ZAB">Забайкальский край</option>
+<option value="RU-MOW">Москва</option>
+<option value="RU-SPE">Санкт-Петербург</option>
+<option value="RU-CHU">Чукотский автономный округ</option>
+<option value="RU-KHM">Ханты-Мансийский автономный округ</option>
+<option value="RU-NEN">Ненецкий автономный округ</option>
+<option value="RU-YAN">Ямало-Ненецкий автономный округ</option>
+<option value="RU-YEV">Еврейская автономная область</option>
+<option value="RU-AD">Адыгея</option>
+<option value="RU-AL">Республика Алтай</option>
+<option value="RU-BA">Башкортостан</option>
+<option value="RU-BU">Бурятия</option>
+<option value="RU-CE">Чечня</option>
+<option value="RU-CU">Чувашия</option>
+<option value="RU-DA">Дагестан</option>
+<option value="RU-IN">Ингушетия</option>
+<option value="RU-KB">Кабардино-Балкария</option>
+<option value="RU-KC">Карачаево-Черкесия</option>
+<option value="RU-KK">Хакасия</option>
+<option value="RU-KL">Калмыкия</option>
+<option value="RU-KO">Республика Коми</option>
+<option value="RU-KR">Республика Карелия</option>
+<option value="RU-ME">Марий Эл</option>
+<option value="RU-MO">Мордовия</option>
+<option value="RU-SA">Якутия</option>
+<option value="RU-SE">Северная Осетия</option>
+<option value="RU-TA">Татарстан</option>
+<option value="RU-TY">Тыва</option>
+<option value="RU-UD">Удмуртия</option>
+</select>

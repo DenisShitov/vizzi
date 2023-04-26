@@ -1,0 +1,722 @@
+swagger: "2.0"
+info:
+  description: "✔ Последнее обновление: обновлена модель"
+  version: "0.0.5"
+  title: "Booking REST API"
+  termsOfService: ""
+  contact:
+    email: "spartansoft@ya.ru"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "vh526442.eurodir.ru"
+basePath: "/api"
+tags:
+- name: "camps"
+  description: "Информация о записях лагерей"
+  externalDocs:
+    description: "url"
+    url: "http://vh526442.eurodir.ru/api/camps/"
+- name: "campsfiles"
+  description: "Информация о связанных файлах лагерей"
+  externalDocs:
+    description: "url"
+    url: "http://vh526442.eurodir.ru/api/campsfiles/"
+schemes:
+- "http"
+paths:
+  /camps:
+    get:
+      tags:
+      - "camps"
+      summary: "Просмотр всех записей кампов"
+      description: "Получение всех записей\n\nприм.: http://vh526442.eurodir.ru/api/camps"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Camps"
+      responses:
+        "405":
+          description: "Invalid input"
+  /camps/{campId}:
+    get:
+      tags:
+      - "camps"
+      summary: "Искать камп по ID"
+      description: "Вернуть один камп\n\nприм.: http://vh526442.eurodir.ru/api/camps/1"
+      operationId: "getCampById"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - name: "campId"
+        in: "path"
+        description: ""
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/Camps"
+        "400":
+          description: "Invalid ID supplied"
+        "404":
+          description: "Camp not found"
+  /camps?fields=id:
+    get:
+      tags:
+      - "camps"
+      summary: "Просмотр записей с ограничением по полям"
+      description: "прим.: http://vh526442.eurodir.ru/api/camps?fields=c_name,c_desc"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Camps"
+      responses:
+        "405":
+          description: "Invalid input"
+  /camps?sort=id:
+    get:
+      tags:
+      - "camps"
+      summary: "Обычная сортировка"
+      description: "По названию: http://vh526442.eurodir.ru/api/camps?sort=c_name\nПо возрасту (от): http://vh526442.eurodir.ru/api/camps?sort=c_age_from\nПо рейтингу: http://vh526442.eurodir.ru/api/camps?sort=c_rating\nПо цене: http://vh526442.eurodir.ru/api/camps?sort=c_cost"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Camps"
+      responses:
+        "405":
+          description: "Invalid input"
+  /camps?sort=-id:
+    get:
+      tags:
+      - "camps"
+      summary: "Обратная сортировка"
+      description: "По названию: http://vh526442.eurodir.ru/api/camps?sort=-c_name\nПо возрасту (от): http://vh526442.eurodir.ru/api/camps?sort=-c_age_from\nПо рейтингу: http://vh526442.eurodir.ru/api/camps?sort=-c_rating\nПо цене: http://vh526442.eurodir.ru/api/camps?sort=-c_cost"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Camps"
+      responses:
+        "405":
+          description: "Invalid input"
+  /camps?filter:
+    get:
+      tags:
+      - "camps"
+      summary: "Фильтрация"
+      description: "Выдача записей по фильтру\n\nПримеры:\nhttp://vh526442.eurodir.ru/api/camps?filter[c_name][like]=terra\nhttp://vh526442.eurodir.ru/api/camps?filter[c_name]=terra (точное совпадение)\n\nМножественная фильтрация:\nhttp://vh526442.eurodir.ru/api/camps?filter[c_category]=3&filter[c_transfer]=4\n\nФильтрация по одному полю с несколькими значениями:\nhttp://vh526442.eurodir.ru/api/camps?filter[c_iso][in][]=RU-NGR&filter[c_iso][in][]=RU-LEN (использование оператора IN)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Больше примеров:\nПоиск по тегу:http://vh526442.eurodir.ru/api/camps?filter[c_tags][like]=тематические\nПоиск по возрасту: http://vh526442.eurodir.ru/api/camps?filter[c_age_from][gte]=5&filter[c_age_to][lte]=12 (от 5 до 12)\nВсе записи кроме: http://vh526442.eurodir.ru/api/camps?filter[c_transfer][neq]=4 (все трансферы, кроме 'самостоятельно')\n\n\nОператоры: http://vh526442.eurodir.ru/oper_info.txt"
+        required: true
+        schema:
+          $ref: "#/definitions/Camps"
+      responses:
+        "405":
+          description: "Invalid input"
+  /campsfiles:
+    get:
+      tags:
+      - "campsfiles"
+      summary: "Просмотр всех файлов кампов"
+      description: "Получение всех записей: http://vh526442.eurodir.ru/api/campsfiles"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Campsfiles"
+      responses:
+        "405":
+          description: "Invalid input"
+  /campsfiles?filter:
+    get:
+      tags:
+      - "campsfiles"
+      summary: "Фильтрация файлов кампов"
+      description: "Получение документов кампа: http://vh526442.eurodir.ru/api/campsfiles?filter[camp_id]=1\nПолучение изображений кампа: http://vh526442.eurodir.ru/api/campsfiles?filter[camp_id]=10&filter[file_type]=0\nПолучение документов всех кампов: http://vh526442.eurodir.ru/api/campsfiles?filter[file_type]=1\n"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Campsfiles"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/login:
+    post:
+      tags:
+      - "user"
+      summary: "Авторизация пользователя. Получение токена и ID."
+      description: "Необходимые данные: log (email), pwd (пароль)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/signup:
+    post:
+      tags:
+      - "user"
+      summary: "Регистрация пользователя. Получение токена и ID."
+      description: "Необходимые данные: log (email), pwd (пароль), name (имя), phone (телефон)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/info?access-token={token}:
+    get:
+      tags:
+      - "user"
+      summary: "Пользовательская информация. Требуется токен"
+      description: "Получение пользовательских данных: http://vh526442.eurodir.ru/api/user?access-token={token}"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/User"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/favorites?access-token={token}:
+    get:
+      tags:
+      - "user"
+      summary: "Информация об избранном пользователя. Требуется токен"
+      description: "Получение записей избранного: http://vh526442.eurodir.ru/api/user/favorites?access-token={token}"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Favorites"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/addfav?access-token={token}:
+    post:
+      tags:
+      - "user"
+      summary: "Добавить запись избранного. Требуется токен"
+      description: "Необходимые поля: access-token, obj_id (id лагеря), type (по умолчанию - 0)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Favorites"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/removefav?access-token={token}:
+    post:
+      tags:
+      - "user"
+      summary: "Удалить запись избранного. Требуется токен"
+      description: "Необходимые поля: access-token, obj_id (id лагеря), type (по умолчанию - 0)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Favorites"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/childs?access-token={token}:
+    get:
+      tags:
+      - "user"
+      summary: "Информация о детях пользователя. Требуется токен"
+      description: "Получение записей избранного: http://vh526442.eurodir.ru/api/user/childs?access-token={token}"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/ChildData"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/addchild?access-token={token}:
+    post:
+      tags:
+      - "user"
+      summary: "Добавить запись ребенка. Требуется токен"
+      description: "Необходимые поля: access-token, fio (ФИО), birthday (дата рождения), snils (снилс), sor (сор), polis (полис)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/ChildData"
+      responses:
+        "405":
+          description: "Invalid input"
+  /user/removechild?access-token={token}:
+    post:
+      tags:
+      - "user"
+      summary: "Удалить запись ребенка. Требуется токен"
+      description: "Необходимые поля: access-token, id (id ребенка)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/ChildData"
+      responses:
+        "405":
+          description: "Invalid input"
+  /reviews:
+    get:
+      tags:
+      - "reviews"
+      summary: "Вывод всех отзывов. Выводятся только те отзывы, которые прошли модерацию (r_moderate = 1)"
+      description: "Получение всех отзывов: http://vh526442.eurodir.ru/api/reviews"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Reviews"
+      responses:
+        "405":
+          description: "Invalid input"
+  /reviews?filter:
+    get:
+      tags:
+      - "reviews"
+      summary: "Фильтрация отзывов. Выводятся только те отзывы, которые прошли модерацию (r_moderate = 1)"
+      description: "Получение отзывов по лагерю: http://vh526442.eurodir.ru/api/reviews?filter[r_camp_id]=1\nПолучение отзывов по пользователю: http://vh526442.eurodir.ru/api/reviews?filter[uid]=21"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Reviews"
+      responses:
+        "405":
+          description: "Invalid input"
+  /reviews/list?access-token={token}:
+    get:
+      tags:
+      - "reviews"
+      summary: "Вывод отзывов пользователя. Выводятся все отзывы, включая и те что не прошли модерацию. Требуется токен"
+      description: "Получение отзывов пользователя: http://vh526442.eurodir.ru/api/reviews/list?access-token={token}"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Reviews"
+      responses:
+        "405":
+          description: "Invalid input"
+  /reviews/add?access-token={token}:
+    post:
+      tags:
+      - "reviews"
+      summary: "Добавить отзыв (от пользователя). Требуется токен"
+      description: "Необходимые поля: access-token, text (текст отзыва), camp_id (ID лагеря)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Reviews"
+      responses:
+        "405":
+          description: "Invalid input"
+  /reviews/uadd:
+    post:
+      tags:
+      - "reviews"
+      summary: "Добавить отзыв (не авторизованный пользователь)"
+      description: "Необходимые поля: text (текст отзыва), camp_id (ID лагеря), name (имя отправителя)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Reviews"
+      responses:
+        "405":
+          description: "Invalid input"
+  /reviews/remove?access-token={token}:
+    post:
+      tags:
+      - "reviews"
+      summary: "Удалить отзыв пользователя. Требуется токен. Можно удалить отзыв который не прошел модерацию (r_moderate = 0)"
+      description: "Необходимые поля: access-token, id (ID отзыва)"
+      operationId: ""
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/xml"
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: ""
+        required: true
+        schema:
+          $ref: "#/definitions/Reviews"
+      responses:
+        "405":
+          description: "Invalid input"
+definitions:
+  Camps:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: ""
+      c_name:
+        type: "string"
+        format: "наименование"
+      c_desc:
+        type: "string"
+        format: "описание"
+      c_iso:
+        type: "string"
+        format: "регион в формате ISO"
+      c_age_from:
+        type: "integer"
+        format: "возраст от"
+      c_age_to:
+        type: "integer"
+        format: "возраст до"
+      c_category:
+        type: "integer"
+        format: "категория [1 - тематические, 2 - развивающие, 3 - спортивные, 4 - оздоровительные]"
+      c_banner:
+        type: "string"
+        format: "главное изображение"
+      c_address:
+        type: "string"
+        format: "адрес"
+      c_transfer:
+        type: "integer"
+        format: "трансфер [1 - авиа, 2 - автобус, 3 - ж/д, 4 - самостоятельно]"
+      c_cost:
+        type: "number"
+        format: "стоимость [если 0 - нужно уточнить]"
+      c_season:
+        type: "integer"
+        format: "сезон [0 - любой, 1 - весна, 2 - зима, 3 - лето, 4 - осень, 5 - весна+лето, 6 - осень+зима]"
+      c_duration:
+        type: "integer"
+        format: "длительность смены [в днях]"
+      c_tags:
+        type: "string"
+        format: "теги [массив]"
+      c_rating:
+        type: "number"
+        format: "рейтинг [не целое число]"
+      c_accommodation:
+        type: "integer"
+        format: "размещение [1,2,3,4]"
+      c_nutrition:
+        type: "integer"
+        format: "питание [1 - завтрак, 2 - полупансион, 3 - полный пансион, 0 - ALL]"
+      c_lim_op:
+        type: "integer"
+        format: "условия для людей с огранич.возможностями [0 - нет, 1 - да]"
+      c_cash_discount:
+        type: "integer"
+        format: "наличие кэшбэка и скидок [0 - нет, 1 - да]"
+      c_map_coord:
+        type: "string"
+        format: "координаты для карты"
+      active:
+        type: "integer"
+        format: "активность [1 - активен, 0 - не активен]"
+  Campsfiles:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: ""
+      camp_id:
+        type: "integer"
+        format: "ID кампа"
+      file_type:
+        type: "integer"
+        format: "тип файла [0 - изображение, 1 - документ]"
+      file_src:
+        type: "string"
+        format: "путь к файлу"
+      file_original_name:
+        type: "string"
+        format: "оригинальное наименование файла"
+  User:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: ""
+      name:
+        type: "string"
+        format: "имя"
+      address:
+        type: "string"
+        format: "адрес"
+      email:
+        type: "string"
+        format: "почтовый ящик"
+      phone:
+        type: "string"
+        format: "телефон"
+  Favorites:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: ""
+      type:
+        type: "integer"
+        format: "тип избранного [по умолчанию 0, т.е. лагеря]"
+      obj_id:
+        type: "integer"
+        format: "ID объекта"
+  ChildData:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: ""
+      parent_id:
+        type: "integer"
+        format: "ID родителя"
+      ch_fio:
+        type: "string"
+        format: "ФИО ребенка"
+      ch_birthday:
+        type: "string"
+        format: "дата рождения ребенка"
+      ch_snils:
+        type: "string"
+        format: "СНИЛС ребенка"
+      ch_sor:
+        type: "string"
+        format: "СОР ребенка"
+      ch_polis:
+        type: "string"
+        format: "полис ребенка"
+  Reviews:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: ""
+      uid:
+        type: "integer"
+        format: "ID пользователя [если отзыв от авторизованного пользователя]"
+      r_text:
+        type: "string"
+        format: "текст отзыва"
+      r_camp_id:
+        type: "integer"
+        format: "ID лагеря"
+      r_user_name:
+        type: "string"
+        format: "имя отправителя [если не авторизован]"
+      r_moderate:
+        type: "integer"
+        format: "статус модерации [0 - не прошел/не проверен, 1 - прошел]"
+externalDocs:
+  description: "Дополнительная информация"
+  url: "http://vh526442.eurodir.ru/api_docs.html"
