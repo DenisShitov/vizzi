@@ -1,0 +1,11 @@
+front.vizzi.ru/
+dev/files/
+dev/.github/
+dev/.idea/
+dev/.vscode/
+dev/.gitignore
+dev/node_modules/
+api.vizzi.ru/vendor/
+api.vizzi.ru/web/
+api.vizzi.ru/.gitignore
+vizzi.ru/
